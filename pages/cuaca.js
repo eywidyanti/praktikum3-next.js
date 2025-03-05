@@ -41,7 +41,7 @@ export default function Cuaca() {
             borderRadius: '10px',
             boxShadow: '0px 4px 10px rgba(0,0,0,0.2)'
         }}>
-            <h1 style={{ marginBottom: '20px' }}><strong>🌤 Cek Cuaca</strong></h1>
+            <h1 style={{ marginBottom: '20px' }}><strong>Cuaca Saat Ini</strong></h1>
             <input
                 type="text"
                 value={city}
@@ -68,7 +68,7 @@ export default function Cuaca() {
                     borderRadius: '5px',
                     fontWeight: 'bold'
                 }}>
-                🔍 Cek Cuaca
+                 Cek Cuaca
             </button>
 
             {error && <p style={{ color: 'red', marginTop: '10px' }}><strong>{error}</strong></p>}
@@ -82,10 +82,10 @@ export default function Cuaca() {
                     background: '#0051a3'
                 }}>
                     <h2>{weather.city}</h2>
-                    <p>🌡 Suhu: {weather.temperature}°C</p>
-                    <p>🌤 Cuaca: {weather.weather}</p>
-                    <p>💧 Kelembaban: {weather.humidity}%</p>
-                    <p>💨 Kecepatan Angin: {weather.windSpeed} m/s</p>
+                    <p>Suhu: {weather.temperature}°C</p>
+                    <p>Cuaca: {weather.weather}</p>
+                    <p>Kelembaban: {weather.humidity}%</p>
+                    <p>Kecepatan Angin: {weather.windSpeed} m/s</p>
                 </div>
             )}
 
